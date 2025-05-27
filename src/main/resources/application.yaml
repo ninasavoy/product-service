@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: account
+    name: product
 
   datasource:
     url: jdbc:postgresql://${DATABASE_HOST}:${DATABASE_PORT:5432}/store
@@ -15,8 +15,8 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-        default_schema: account
+        default_schema: product
 
   flyway:
-    schemas: account
+    schemas: product
     baseline-on-migrate: true
